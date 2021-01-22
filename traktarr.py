@@ -1577,7 +1577,7 @@ def run(
 
     # Add tasks to schedule and do first run if enabled
     if cfg.automatic.movies.interval and cfg.automatic.movies.interval > 0:
-        movie_schedule = schedule.every(cfg.automatic.movies.interval).hours.do(
+        movie_schedule = schedule.every(cfg.automatic.movies.interval).minutes.do(
             automatic_movies,
             add_delay,
             sort,
@@ -1593,7 +1593,7 @@ def run(
             time.sleep(add_delay)
 
     if cfg.automatic.shows.interval and cfg.automatic.shows.interval > 0:
-        shows_schedule = schedule.every(cfg.automatic.shows.interval).hours.do(
+        shows_schedule = schedule.every(cfg.automatic.shows.interval).minutes.do(
             automatic_shows,
             add_delay,
             sort,

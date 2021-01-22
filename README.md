@@ -403,7 +403,7 @@ _Note: The number specified is the number of items that will be added into Radar
 
 ### Interval
 
-`interval` - Specify how often (in hours) to run Traktarr task.
+`interval` - Specify how often (in minutes) to run Traktarr task.
 
   - Setting `interval` to `0`, will skip the schedule for that task.
 
